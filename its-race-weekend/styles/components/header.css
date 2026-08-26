@@ -1,0 +1,110 @@
+/*############ HEADER — MOBILE ################*/
+
+#headerContainer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    padding: 20px;
+
+    background-color: #15151e;
+    border-bottom: 3px solid #e10600;
+}
+
+#logo {
+    display: flex;
+
+    align-items: center;
+
+    width: fit-content;
+}
+
+#logo img {
+    display: block;
+
+    width: 150px;
+    height: auto;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 15px;
+}
+
+#menu a {
+    width: 100%;
+
+    padding: 10px 0;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border-bottom: 1px solid #2a2f3a;
+
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    color: #e10600;
+    border-bottom-color: #e10600;
+}
+
+/*=========== ########## ============*/
+
+
+/*############ TABLET ################*/
+
+@media (min-width: 600px) {
+
+    #menu {
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        gap: 30px;
+    }
+
+    #menu a {
+        width: auto;
+
+        border-bottom: 2px solid transparent;
+    }
+
+}
+
+/*=========== ########## ============*/
+
+
+/*############ DESKTOP ################*/
+
+@media (min-width: 900px) {
+
+    #headerContainer {
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 25px 60px;
+    }
+
+    #logo img {
+        width: 170px;
+    }
+
+}
+
+/*=========== ########## ============*/
