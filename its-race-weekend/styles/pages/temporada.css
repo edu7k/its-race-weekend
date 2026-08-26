@@ -1,0 +1,55 @@
+/*############ PÁGINA DA TEMPORADA ################*/
+
+#temporadaPage {
+    min-height: calc(100vh - 150px);
+}
+
+#cabecalhoTemporada {
+    padding-left: 20px;
+
+    border-left: 4px solid #e10600;
+}
+
+.subtituloTemporada {
+    color: #e10600;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.calendarioPlaceholder {
+    padding: 25px;
+
+    background-color: #15151e;
+
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+}
+
+.calendarioPlaceholder h2 {
+    color: white;
+}
+
+.calendarioPlaceholder p {
+    margin-bottom: 0;
+}
+
+/*=========== ########## ============*/
+
+
+/*############ RESPONSIVIDADE TABLET E DESKTOP ################*/
+
+@media (min-width: 768px) {
+
+    #cabecalhoTemporada {
+        padding-left: 30px;
+    }
+
+    .calendarioPlaceholder {
+        padding: 35px;
+    }
+
+}
+
+/*=========== ########## ============*/
