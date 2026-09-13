@@ -40,20 +40,18 @@ export default function RaceWeekendCard({raceWeekend, }: NextRaceCardProps ) {
                     <strong>{raceWeekend.country}</strong>
                 </div>
             
-                <div>
-                    <div className="weekend-information-item">
-                        <span>Etapa: </span> 
-                        <strong>{raceWeekend.round}</strong>
-                    </div>
+                
+                <div className="weekend-information-item">
+                    <span>Etapa: </span> 
+                    <strong>{raceWeekend.round}</strong>
                 </div>
+                
 
-                <div>
-                    <div className="weekend-information-item">
-                        <span>Período: </span>
-                        <strong>{weekendPeriod}</strong>
-                    </div>
+                <div className="weekend-information-item">
+                    <span>Período: </span>
+                    <strong>{weekendPeriod}</strong>
                 </div>
-
+                
             </div>
             
 
