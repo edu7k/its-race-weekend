@@ -1,4 +1,4 @@
-import RaceWeekendCard from "../components/home/NextRaceCard";
+import RaceWeekendCard from "../components/home/RaceWeekendCard";
 import { mockNextRaceWeekend } from "../lib/mock-race-weekend";
 import "../styles/pages/home.css";
 

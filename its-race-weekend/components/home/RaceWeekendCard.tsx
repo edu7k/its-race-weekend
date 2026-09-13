@@ -3,7 +3,7 @@ import type {
     RaceWeekendStatus,
 } from "../../types/race-weekend"
 
-type NextRaceCardProps = {
+type RaceWeekendCardProps = {
     raceWeekend: RaceWeekend;
 };
 
@@ -16,7 +16,7 @@ function getWeekendStatus(status: RaceWeekendStatus){
     return "Encerrada"
 }
 
-export default function RaceWeekendCard({raceWeekend, }: NextRaceCardProps ) {
+export default function RaceWeekendCard({raceWeekend, }: RaceWeekendCardProps ) {
     const weekendPeriod = 
         raceWeekend.startDate !== null && raceWeekend.endDate !== null ? ` ${raceWeekend.startDate} até ${raceWeekend.endDate}`:
         "Data a Definir";
@@ -26,7 +26,7 @@ export default function RaceWeekendCard({raceWeekend, }: NextRaceCardProps ) {
       aria-labelledby="next-weekend-title">
             <header className="weekend-card-header">
                 <span className="weekend-status">
-                    {getWeekendStatus(raceWeekend.status)}
+                    {raceWeekend.status}
                 </span>
 
                 <h2 id="next-weekend-title">{raceWeekend.name}</h2>
