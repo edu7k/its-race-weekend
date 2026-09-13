@@ -1,22 +1,23 @@
+import RaceWeekendCard from "../components/home/NextRaceCard";
+import { mockNextRaceWeekend } from "../lib/mock-race-weekend";
+import "../styles/pages/home.css";
+
+
 export default function HomePage() {
   return (
-    <main>
-      <section>
-        <p>Temporada de Fórmula 1</p>
+    <main className="home-page">
+      <section className="home-hero" aria-labelledby="home-title">
+        <div className="home-hero-content">
+          <p className="home-eyebrow">Próxima etapa</p>
 
-        <h1>itsRaceWeekend</h1>
+          <h1 id="home-title">{mockNextRaceWeekend.name}</h1>
 
-        <p>
-          Consulte a próxima corrida, os horários das sessões, o calendário da
-          temporada, os resultados e as classificações do campeonato.
-        </p>
+          <p>{mockNextRaceWeekend.circuit}</p>
+        </div>
       </section>
 
-      <section aria-labelledby="next-race-title">
-        <h2 id="next-race-title">Próxima corrida</h2>
-
-        <p>As informações da próxima etapa serão exibidas aqui.</p>
-      </section>
+      
+      <RaceWeekendCard raceWeekend={mockNextRaceWeekend} />
     </main>
   );
 }
