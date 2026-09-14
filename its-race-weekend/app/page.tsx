@@ -1,4 +1,4 @@
-import RaceWeekendCard from "../components/home/RaceWeekendCard";
+import HomeRaceCard from "../components/home/HomeRaceCard";
 import { mockNextRaceWeekend } from "../lib/mock-race-weekend";
 import "../styles/pages/home.css";
 
@@ -17,7 +17,7 @@ export default function HomePage() {
       </section>
 
       
-      <RaceWeekendCard raceWeekend={mockNextRaceWeekend} />
+      <HomeRaceCard raceWeekend={mockNextRaceWeekend} />
     </main>
   );
 }

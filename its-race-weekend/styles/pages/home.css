@@ -1,9 +1,29 @@
+/*=========== ESTRUTURA DA HOME ============*/
+
 .home-page {
     width: 100%;
     max-width: none;
     margin: 0;
     padding: 0;
 }
+
+.home-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 24px;
+
+    position: relative;
+    z-index: 1;
+
+    background-color: #15151e;
+    border-radius: 16px;
+}
+
+/*=========== ########## ============*/
+
+
+/*=========== HERO DA HOME ============*/
 
 .home-hero {
     position: relative;
@@ -50,30 +70,18 @@
 
 .home-hero h1 {
     margin-bottom: 10px;
-
     font-size: 36px;
 }
 
 .home-hero p:last-child {
     margin-bottom: 0;
-
     color: #f5f7fa;
 }
 
-.home-content {
-    width: calc(100% - 40px);
-    max-width: 1200px;
+/*=========== ########## ============*/
 
-    margin: -50px auto 0;
-    padding: 24px;
 
-    position: relative;
-    z-index: 2;
-
-    background-color: #15151e;
-    border: 1px solid #2a2f3a;
-    border-radius: 16px;
-}
+/*=========== CARD DO FIM DE SEMANA ============*/
 
 .weekend-card {
     display: flex;
@@ -82,14 +90,13 @@
 }
 
 .weekend-card-header {
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .weekend-status {
-    width: fit-content;
-
     color: #e10600;
 
     font-size: 14px;
@@ -99,14 +106,14 @@
 }
 
 .weekend-card-header h2 {
-    margin: 0;
-
+    margin:0;
     font-size: 30px;
 }
 
-.weekend-card-header p {
-    margin: 0;
-}
+/*=========== ########## ============*/
+
+
+/*=========== CARD INFORMAÇÕES DO FIM DE SEMANA ============*/
 
 .weekend-information {
     display: grid;
@@ -137,11 +144,79 @@
 
 .weekend-information-item strong {
     color: #f5f7fa;
-
     font-size: 18px;
 }
 
+/*=========== ########## ============*/
+
+
+/*=========== CARD PROGRAMAÇÃO DO FIM DE SEMANA ============*/
+
+.weekend-schedule {
+    width: 100%;
+}
+
+.schedule-header {
+    margin-bottom: 20px;
+}
+
+.schedule-header h2 {
+    margin: 0;
+}
+
+.schedule-header p {
+    margin: 0 px ;
+
+    color: #a5a7b0;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 16px;
+
+    background-color: #1c1d26;
+    border-radius: 8px;
+}
+
+.schedule-item strong {
+    display: block;
+    font-size: 18px;
+}
+
+.schedule-item h2 {
+    margin: 5px;
+
+    font-size: 18px;
+    color: #a5a7b0;
+    
+}
+
+.schedule-time {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.race-session {
+    border: 1px solid #8b3038;
+    border-left: 3px solid #e10600;
+}
+
+/*=========== ########## ============*/
+
+
+/*############ RESPONSIVIDADE TABLET E DESKTOP ################*/
+
 @media (min-width: 768px) {
+
     .home-hero {
         min-height: 380px;
         padding: 70px 60px 120px;
@@ -164,4 +239,7 @@
     .weekend-card-header h2 {
         font-size: 36px;
     }
+
 }
+
+/*=========== ########## ============*/
