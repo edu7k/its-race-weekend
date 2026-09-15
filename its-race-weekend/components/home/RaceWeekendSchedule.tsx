@@ -22,31 +22,24 @@ export default function RaceWeekendSchedule({raceWeekend }: RaceWeekendScheduleP
 
             <div className="schedule-list">
                 
-                <div className="schedule-item">
-                    <strong>Treino Livre 1</strong>
-                    <h2>T1 | horario</h2>
-                </div>
+                {raceWeekend.sessions.map( (session) => (
+                    <div className={session.name === "Corrida" ? "schedule-item race-session" : "schedule-item"}
+                    key={session.name}>
+
+                        <div>
+                            <strong>{session.name}</strong>
+                            
+                            <p>{session.date !== null ? session.date : "Data a definir"}</p>
+                        </div>
+
+                        <span className="schedule-time">{session.time !== null ? session.time : "Horário a definir"}</span>
+                    </div>
+                    )
+                )}
+                
             
-                <div className="schedule-item">
-                    <strong>Treino Livre 2</strong>
-                    <h2>T2 | horario</h2>
-                </div>
                 
-                <div className="schedule-item">
-                    <strong>Treino Livre 3</strong>
-                    <h2>T3 | horario</h2>
-                </div>
-                
-                <div className="schedule-item">
-                    <strong>Qualify</strong>
-                    <h2>Qualify | horario</h2>
-                </div>
-                
-                <div className="schedule-item race-session">
-                    <strong>Race</strong>
-                    <h2>Race | horario</h2>
-                </div>
-                
+
             </div>
 
         </div>
