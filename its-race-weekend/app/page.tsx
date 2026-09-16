@@ -6,11 +6,11 @@ import "../styles/pages/home.css";
 export default function HomePage() {
   return (
     <main className="home-page">
-      <section className="home-hero" aria-labelledby="home-title">
+      <section className="home-hero" >
         <div className="home-hero-content">
           <p className="home-eyebrow">Próxima etapa</p>
 
-          <h1 id="home-title">{mockNextRaceWeekend.name}</h1>
+          <h1>{mockNextRaceWeekend.name}</h1>
 
           <p>{mockNextRaceWeekend.circuit}</p>
         </div>

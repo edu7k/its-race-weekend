@@ -1,4 +1,4 @@
-import type { RaceWeekend } from "../types/race-weekend";
+import type { RaceWeekend } from "../types/raceWeekend";
 
 export const mockNextRaceWeekend: RaceWeekend = {
   name: "Grande Prêmio da Itália",

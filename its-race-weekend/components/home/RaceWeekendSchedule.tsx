@@ -2,7 +2,7 @@
 import type {
     RaceWeekend,
     RaceWeekendStatus,
-} from "../../types/race-weekend"
+} from "../../types/raceWeekend"
 
 type RaceWeekendScheduleProps = {
     raceWeekend: RaceWeekend;

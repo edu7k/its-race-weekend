@@ -1,7 +1,7 @@
 import type {
     RaceWeekend,
     RaceWeekendStatus,
-} from "../../types/race-weekend"
+} from "../../types/raceWeekend"
 
 import RaceWeekendInfo from "./RaceWeekendInfo";
 import RaceWeekendSchedule from "./RaceWeekendSchedule";

@@ -1,46 +1,15 @@
-import type { Metadata } from "next";
-import "../../styles/pages/classificacao.css";
+import ClassificationCard from "../../components/standings/StandingCard";
 
-export const metadata: Metadata = {
-  title: "Classificação",
-  description:
-    "Consulte as classificações de pilotos e construtores da Fórmula 1.",
-};
+import { mockDriverStanding } from "../../lib/mockDriverStanding";
+import { mockConstructorStanding } from "../../lib/mockConstructorStanding";
 
-export default function ClassificacaoPage() {
+export default function ClassificationPage() {
   return (
-    <main id="classificacaoPage">
-      <section id="cabecalhoClassificacao">
-        <p className="subtituloClassificacao">
-          Campeonato de Fórmula 1
-        </p>
-
-        <h1>Classificação</h1>
-
-        <p>
-          Consulte a classificação de pilotos e construtores após cada etapa
-          da temporada.
-        </p>
-      </section>
-
-      <section className="containerClassificacoes">
-        <div className="classificacaoPlaceholder">
-          <h2>Pilotos</h2>
-
-          <p>
-            A classificação do campeonato de pilotos será apresentada aqui.
-          </p>
-        </div>
-
-        <div className="classificacaoPlaceholder">
-          <h2>Construtores</h2>
-
-          <p>
-            A classificação do campeonato de construtores será apresentada
-            aqui.
-          </p>
-        </div>
-      </section>
+    <main>
+      <ClassificationCard
+        driverStanding={mockDriverStanding}
+        constructorStanding={mockConstructorStanding}
+      />
     </main>
   );
 }
