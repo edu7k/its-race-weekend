@@ -19,7 +19,7 @@ export default function StandingCard( {driverStanding, constructorStanding} : St
 
     return (
 
-        <section>
+        <section className="standing-card">
             
             <StandingCardHeader 
             activeStanding={standingView}

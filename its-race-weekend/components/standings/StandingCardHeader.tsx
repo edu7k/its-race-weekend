@@ -13,16 +13,21 @@ export default function StandingCardHeader({ activeStanding, round, onStandingCh
     const title= activeStanding === "driver" ? "Campeonato de Pilotos" : "Campeonato de Construtores";
 
     return(
-        <header>
-            <h1>{title}</h1>
-            <p>Round: {round}</p>
+        <header className="standing-card-header">
+            
+            <div className="standing-card-heading">   
+                <h1 className="standing-card-title">{title}</h1>
+                <p className="standing-card-round">Round: {round}</p>
+            </div>
 
-            <div>
-                <button type="button" onClick={() => onStandingChange("driver")}>
+            <div >
+                <button type="button" className={`standing-tab ${activeStanding === "driver" ? "active" : ""}`}
+                 onClick={() => onStandingChange("driver")}>
                     Pilotos
                 </button>
 
-                <button type="button" onClick={() => onStandingChange("constructor")}>
+                <button type="button" className={`standing-tab ${activeStanding === "constructor" ? "active" : ""}`}
+                 onClick={() => onStandingChange("constructor")}>
                     Construtores
                 </button>
             </div>
