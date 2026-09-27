@@ -25,26 +25,21 @@
 /*=========== HEADER DO CARD ============*/
 
 .standing-card-header {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .standing-card-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    margin-bottom: 24px;
+    margin-bottom: 5px;
 }
 
 .standing-card-title {
     margin: 0;
-
     font-size: 30px;
 }
 
 .standing-card-round {
     margin: 0;
-
+    margin-top: 12;
     color: #a9b0bd;
     font-size: 16px;
 }
@@ -53,13 +48,13 @@
 
 .standing-tabs {
     display: flex;
-
+    justify-content: flex-end;
     border-bottom: 1px solid #2a2f3a;
 }
 
 .standing-tab {
-    flex: 1;
-
+    
+    justify-content: flex-end;
     padding: 14px 12px;
 
     background-color: transparent;
@@ -178,6 +173,7 @@
 
 .standing-team {
     color: #a9b0bd;
+    
 }
 
 .standing-number {

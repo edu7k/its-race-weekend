@@ -65,7 +65,7 @@ export default function StandingTable({
             : constructorStanding.constructors.map((standingItem) => (
                 <tr className="standing-row" key={standingItem.constructor.id}>
                   <td className="standing-position">{standingItem.position}</td>
-                  <td className="standing-name">{standingItem.constructor.name}</td>
+                  <td className="constructor-name">{standingItem.constructor.name}</td>
                   <td className="standing-number">{standingItem.wins}</td>
                   <td className="standing-number standing-points">{standingItem.points}</td>
                 </tr>

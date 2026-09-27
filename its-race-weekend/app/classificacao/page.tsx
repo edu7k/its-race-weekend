@@ -8,6 +8,8 @@ export default function StandingPage() {
   return (
     <main className="standing-page">
       
+      
+      
       <StandingCard
         driverStanding={mockDriverStanding}
         constructorStanding={mockConstructorStanding}

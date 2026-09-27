@@ -20,7 +20,7 @@ export default function StandingCardHeader({ activeStanding, round, onStandingCh
                 <p className="standing-card-round">Round: {round}</p>
             </div>
 
-            <div >
+            <div className="standing-tabs">
                 <button type="button" className={`standing-tab ${activeStanding === "driver" ? "active" : ""}`}
                  onClick={() => onStandingChange("driver")}>
                     Pilotos
