@@ -1,6 +1,7 @@
 import "../../styles/pages/temporada.css";
 import type {Metadata} from "next";
-
+import SeasonHeader from "../../components/season/SeasonHeader"
+import CalendarCard from "@/components/season/CalendarCard";
 
 export const metadata: Metadata = {
   title: "Temporada",
@@ -10,22 +11,13 @@ export const metadata: Metadata = {
 export default function TemporadaPage() {
 
     return(
-        <main id="temporadaPage">
-      <section id="cabecalhoTemporada">
-        <p className="subtituloTemporada">Calendário da Fórmula 1</p>
+      <main id="temporadaPage">
+        <SeasonHeader/>
 
-        <h1>Temporada</h1>
-
-        <p>
-          Consulte todas as etapas da temporada e acompanhe quais corridas já
-          foram finalizadas.
-        </p>
-      </section>
-
-      <section className="calendarioPlaceholder">
-        <h2>Calendário da temporada</h2>
-        <p>As corridas serão apresentadas aqui.</p>
-      </section>
+        <section className="calendarioPlaceholder">
+          <h2>Calendário da temporada</h2>
+          <p>As corridas serão apresentadas aqui.</p>
+        </section>
     </main>
     )
 }

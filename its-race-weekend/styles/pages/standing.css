@@ -1,0 +1,215 @@
+/*=========== PÁGINA DE CLASSIFICAÇÃO ============*/
+
+.classification-page {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+/*=========== CARD PRINCIPAL ============*/
+
+.standing-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+
+    background-color: #15151e;
+    border: 1px solid #2a2f3a;
+    border-radius: 16px;
+}
+
+
+/*=========== HEADER DO CARD ============*/
+
+.standing-card-header {
+    margin-bottom: 20px;
+}
+
+.standing-card-heading {
+    margin-bottom: 5px;
+}
+
+.standing-card-title {
+    margin: 0;
+    font-size: 30px;
+}
+
+.standing-card-round {
+    margin: 0;
+    margin-top: 12;
+    color: #a9b0bd;
+    font-size: 16px;
+}
+
+/*=========== ABAS DA CLASSIFICAÇÃO ============*/
+
+.standing-tabs {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #2a2f3a;
+}
+
+.standing-tab {
+    
+    justify-content: flex-end;
+    padding: 14px 12px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+
+    color: #a9b0bd;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.standing-tab.active {
+    color: #f5f7fa;
+    border-bottom-color: #e10600;
+}
+
+/*=========== TABELA DA CLASSIFICAÇÃO ============*/
+
+.standing-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.standing-table {
+    width: 100%;
+    min-width: 680px;
+
+    background-color: #15151e;
+    border-collapse: collapse;
+}
+
+.standing-table th {
+    padding: 14px 16px;
+
+    background-color: #1b1e28;
+    border-bottom: 1px solid #2a2f3a;
+
+    color: #a9b0bd;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.standing-table td {
+    padding: 16px;
+
+    border-bottom: 1px solid #2a2f3a;
+
+    color: #f5f7fa;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.position-column {
+    width: 70px;
+    text-align: center;
+}
+
+.number-column {
+    width: 100px;
+    text-align: center;
+}
+
+
+/*=========== DADOS DA CLASSIFICAÇÃO ============*/
+
+.standing-row {
+    background-color: #15151e;
+}
+
+.standing-position {
+    color: #e10600;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.driver-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.driver-abbreviation {
+    padding: 6px 8px;
+    width: 45px;
+    margin-right: 10px;
+
+    background-color: #1b1e28;
+    border-radius: 6px;
+
+    color: #e10600;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.driver-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.driver-name {
+    color: #f5f7fa;
+    font-size: 16px;
+}
+
+.driver-meta {
+    color: #a9b0bd;
+    font-size: 13px;
+}
+
+.standing-team {
+    color: #a9b0bd;
+    
+}
+
+.standing-number {
+    text-align: center;
+}
+
+.standing-points {
+    color: #f5f7fa;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.constructor-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*=========== TABLET E DESKTOP ============*/
+
+@media (min-width: 768px) {
+    .classification-page {
+        padding: 70px 60px;
+    }
+
+    .standing-card {
+        padding: 40px;
+    }
+
+    .standing-card-heading {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .standing-card-title {
+        font-size: 38px;
+    }
+}

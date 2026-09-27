@@ -15,11 +15,11 @@ export default function StandingTable({
   const showingDrivers = activeStanding === "driver";
 
   return (
-    <div>
-      <table>
+    <div className="standing-table-container">
+      <table className="standing-table">
         <thead>
           <tr>
-            <th>Pos.</th>
+            <th className="position-column">Pos.</th>
 
             <th>
               {showingDrivers ? "Piloto" : "Construtor"}
@@ -27,29 +27,29 @@ export default function StandingTable({
 
             {showingDrivers && <th>Equipe</th>}
 
-            <th>Vitórias</th>
-            <th>Pontos</th>
+            <th className="number-column">Vitórias</th>
+            <th className="number-column">Pontos</th>
           </tr>
         </thead>
 
         <tbody>
           {showingDrivers
             ? driverStanding.drivers.map((standingItem) => (
-                <tr key={standingItem.driver.id}>
-                  <td>{standingItem.position}</td>
+                <tr className="standing-row" key={standingItem.driver.id}>
+                  <td className="standing-position">{standingItem.position}</td>
 
                   <td>
-                    <div>
-                      <span>
+                    <div className="driver-info">
+                      <span className="driver-abbreviation">
                         {standingItem.driver.abbreviation}
                       </span>
 
-                      <div>
-                        <strong>
+                      <div className="driver-details">
+                        <strong className="driver-name">
                           {standingItem.driver.name}
                         </strong>
 
-                        <span>
+                        <span className="driver-meta">
                           {standingItem.driver.nationality} ·{" "}
                           {standingItem.driver.number}
                         </span>
@@ -57,17 +57,17 @@ export default function StandingTable({
                     </div>
                   </td>
 
-                  <td>{standingItem.constructor.name}</td>
-                  <td>{standingItem.wins}</td>
-                  <td>{standingItem.points}</td>
+                  <td className="standing-team">{standingItem.constructor.name}</td>
+                  <td className="standing-number">{standingItem.wins}</td>
+                  <td className="standing-number standing-points">{standingItem.points}</td>
                 </tr>
               ))
             : constructorStanding.constructors.map((standingItem) => (
-                <tr key={standingItem.constructor.id}>
-                  <td>{standingItem.position}</td>
-                  <td>{standingItem.constructor.name}</td>
-                  <td>{standingItem.wins}</td>
-                  <td>{standingItem.points}</td>
+                <tr className="standing-row" key={standingItem.constructor.id}>
+                  <td className="standing-position">{standingItem.position}</td>
+                  <td className="constructor-name">{standingItem.constructor.name}</td>
+                  <td className="standing-number">{standingItem.wins}</td>
+                  <td className="standing-number standing-points">{standingItem.points}</td>
                 </tr>
               ))}
         </tbody>
