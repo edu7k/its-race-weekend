@@ -1,7 +1,8 @@
 import "../../styles/pages/temporada.css";
 import type {Metadata} from "next";
+import { mockSeasonRaces } from "../../lib/mockSeasonRaces";
 import SeasonHeader from "../../components/season/SeasonHeader"
-import CalendarCard from "@/components/season/CalendarCard";
+import SeasonCard from "@/components/season/SeasonCard";
 
 export const metadata: Metadata = {
   title: "Temporada",
@@ -14,10 +15,7 @@ export default function TemporadaPage() {
       <main id="temporadaPage">
         <SeasonHeader/>
 
-        <section className="calendarioPlaceholder">
-          <h2>Calendário da temporada</h2>
-          <p>As corridas serão apresentadas aqui.</p>
-        </section>
+        <SeasonCard seasonRaces={mockSeasonRaces}/>
     </main>
     )
 }
