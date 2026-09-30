@@ -15,16 +15,19 @@ export default function SeasonCarousel( {seasonRaces} : CarouselProps){
     return(
 
 
-        <section>
+        <section className="season-carousel">
             {seasonRaces.map((race) => (
-                <button key={race.round} type="button" onClick={ () => {setSelectedRace(race)}}>
-                    <p>{race.round}</p>
+                <button className="season-race-card" 
+                key={race.round} type="button" onClick={ () => {setSelectedRace(race)}} 
+                >
+                    <p>Round: {race.round}</p>
                     <p>{race.name}</p>
                 </button>
             ))}
 
             {selectedRace && (
-                <RaceResultModal Race={selectedRace} />
+                <RaceResultModal Race={selectedRace}
+                onClose={() =>{setSelectedRace(null)}} />
             )}
         </section>
     )

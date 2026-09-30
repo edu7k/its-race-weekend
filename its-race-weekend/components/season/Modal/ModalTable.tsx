@@ -8,7 +8,7 @@ export default function ModalTable({ seasonRaces }: modalTableProps) {
 
     return (
         <section>
-            <table>
+            <table className="race-result-modal-table">
                 <thead>
                     <th>Pos.</th>
 

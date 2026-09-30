@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function TemporadaPage() {
 
     return(
-      <main id="temporadaPage">
+      <main id="season-page">
         <SeasonHeader/>
 
         <SeasonCard seasonRaces={mockSeasonRaces}/>

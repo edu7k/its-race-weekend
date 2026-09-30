@@ -11,7 +11,7 @@ type SeasonCardProps = {
 export default function SeasonCard({ seasonRaces }: SeasonCardProps){
     
     return(
-        <section className="calendarioPlaceholder">
+        <section className="season-calendar">
             <h2>Calendário da temporada</h2>
             
             <SeasonCarousel

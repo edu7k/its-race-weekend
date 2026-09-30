@@ -4,15 +4,22 @@ import ModalTable from "./ModalTable";
 
 type RaceResultModalProps = {
     Race: SeasonRace;
+    onClose: () => void; 
 }
 
-export default function RaceResultModal({ Race }: RaceResultModalProps) { 
+export default function RaceResultModal({ Race, onClose}: RaceResultModalProps) { 
 
 
     return (
-        <section>
-            <ModalHeader seasonRaces={Race} />
-            <ModalTable seasonRaces={Race} />
+        <section className="race-result-modal">
+            <div className="race-result-modal-content">
+                
+                <ModalHeader seasonRaces={Race} 
+                onClose={onClose}/>
+
+                <ModalTable seasonRaces={Race} />
+
+            </div>
 
             
         </section>

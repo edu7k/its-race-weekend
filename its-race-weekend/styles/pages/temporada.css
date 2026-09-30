@@ -1,16 +1,16 @@
 /*############ PÁGINA DA TEMPORADA ################*/
 
-#temporadaPage {
+#season-page {
     min-height: calc(100vh - 150px);
 }
 
-#cabecalhoTemporada {
+#season-header {
     padding-left: 20px;
 
     border-left: 4px solid #e10600;
 }
 
-.subtituloTemporada {
+.season-subtitle {
     color: #e10600;
 
     font-size: 16px;
@@ -18,7 +18,7 @@
     text-transform: uppercase;
 }
 
-.calendarioPlaceholder {
+.season-calendar {
     padding: 25px;
 
     background-color: #15151e;
@@ -27,16 +27,189 @@
     border-radius: 10px;
 }
 
-.calendarioPlaceholder h2 {
+.season-calendar h2 {
     color: white;
 }
 
-.calendarioPlaceholder p {
+.season-calendar p {
     margin-bottom: 0;
 }
 
 /*=========== ########## ============*/
 
+/*############ CARROSSEL DA TEMPORADA ################*/
+
+.season-carousel {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 25px;
+
+    overflow-x: auto;
+}
+
+.season-race-card {
+    min-width: 180px;
+    padding: 20px;
+
+    background-color: #1c1d26;
+
+    border: 1px solid #2a2f3a;
+    border-radius: 8px;
+
+    color: white;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.season-race-card:hover {
+    border-color: #e10600;
+}
+
+.season-race-card p:first-child {
+    color: #e10600;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.season-race-card p:last-child {
+    margin-top: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*=========== ########## ============*/
+
+
+/*############ MODAL RESULTADO DA CORRIDA ################*/
+
+.race-result-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    z-index: 1000;
+}
+
+.race-result-modal-content {
+    width: 100%;
+    max-width: 900px;
+    max-height: 85vh;
+
+    padding: 25px;
+
+    background-color: #15151e;
+
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+
+    overflow-y: auto;
+}
+
+
+/*=========== ########## ============*/
+
+
+/*############ CABEÇALHO DO MODAL ################*/
+
+.race-result-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #2a2f3a;
+}
+
+.race-result-modal-header h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.race-result-modal-header p {
+    margin: 6px 0 0;
+
+    color: #e10600;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*=========== ########## ============*/
+
+
+/*############ BOTÃO DO MODAL ################*/
+
+.race-result-modal-header button {
+    padding: 6px 12px;
+
+    background-color: transparent;
+
+    border: 1px solid #e10600;
+    border-radius: 5px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.race-result-modal-header button:hover {
+    background-color: #e10600;
+}
+
+
+/*=========== ########## ============*/
+
+
+/*############ TABELA DO MODAL ################*/
+
+.race-result-modal-table {
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+
+    color: white;
+}
+
+.race-result-modal-table th {
+    padding: 12px;
+
+    background-color: #1c1d26;
+
+    color: #e10600;
+
+    text-align: left;
+}
+
+.race-result-modal-table td {
+    padding: 12px;
+
+    border-top: 1px solid #2a2f3a;
+}
+
+
+
+/*=========== ########## ============*/
 
 /*############ RESPONSIVIDADE TABLET E DESKTOP ################*/
 
